@@ -10,3 +10,4 @@
 tech = Category.create(name:"tech")
 photography = Category.create(name:"photography")
 real_estate = Category.create(name: "real_estate")
+
