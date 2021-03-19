@@ -4,7 +4,7 @@ class CreateJournals < ActiveRecord::Migration[6.0]
       t.string :title
       t.string :description
       t.string :image_url
-      t.belongs_to :category
+      t.belongs_to :category, foreign_key: true
 
       t.timestamps
     end
