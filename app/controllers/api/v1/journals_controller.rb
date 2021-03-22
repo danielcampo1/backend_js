@@ -13,6 +13,13 @@ class Api::V1::JournalsController < ApplicationController
         end
     end
 
+    def destroy
+        journal = Journal.find(id: params[:id])
+        if journal.destroy
+            render json: {id: journal.id}
+        end
+    end
+
 
 
     private
